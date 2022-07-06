@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A French-English Translator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="translator.css" rel="stylesheet">
+    <link rel="icon" href="displayIcon.svg">
+</head>
+<body>
+    <div class="contrainer">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><h2 class="text-center french-english-translator_text"></h2></a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <button class="btn btn-outline-dark dropdown-toggle history_btn" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">History</button>
+                        <ul class="dropdown-menu navbar-nav-scroll" aria-labelledby="navbarDropdownMenuLink">
+                          <li><span class="dropdown-item history_item1">1. Title 1</span></li>
+                          <li><span class="dropdown-item history_item2">2. Title 2</span></li>
+                          <li><span class="dropdown-item history_item3">3. Title 3</span></li>
+                        </ul>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-outline-dark dropdown-toggle settings_btn" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Settings</button>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><span class="dropdown-item language_setting">Language</span></li>
+                        <li><span class="dropdown-item history_setting">History</span>
+                        </li>
+                      </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+        <div class="row row-cols-2 translation_div">
+            <label for="french_textarea" class="col text-center"><h3 class="french_h3_text"></h3></label>
+            <label for="english_textarea" class="col text-center"><h3 class="english_h3_text"></h3></label>
+            <textarea id="french_textarea" name="french_text" placeholder="Texte français" class="text-wrap text-break col"></textarea>
+            <textarea id="english_textarea" name="english_text" placeholder="English text" class="text-wrap text-break col"></textarea>
+            <span class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <button class="btn btn-outline-success btn-sm copy_french_text"></button>
+            </span>
+            <span class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <button class="btn btn-outline-success btn-sm copy_english_text"></button>
+            </span>
+
+            <div class="d-grid gap-2 col-3 mx-auto">
+                <button class="btn btn-outline-primary translate_button"></button>
+            </div>
+    </div>
+    <br/><br/><br/><br/>
+    <p class="text-center copyright_text">&copy; No_Name</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="translator.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.translation_div
+{
+    margin: 0 10%;
+}
+
+
+.french-english-translator_text::after
+{
+    content: "French-English Translator";
+}
+.french-english-translator_text:hover::after
+{
+    content: "Traducteur Français-anglais";
+}
+
+.french_h3_text::after
+{
+    content: "Français";
+}
+.french_h3_text:hover::after
+{
+    content: "French";
+}
+
+.english_h3_text::after
+{
+    content: "English";
+}
+.english_h3_text:hover::after
+{
+    content: "Anglais";
+}
+
+
+#french_textarea
+{
+    margin-right: 1%;
+    width: 49.5%;
+}
+
+#english_textarea
+{
+    width: 49.5%;
+}
+
+/* To aling the logo to the center. */
+.navbar-brand
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h2
+{
+    padding: 0 1% 1% 1%;
+}
+
+.translate_button::after
+{
+    content: "Translate";
+}
+.translate_button:hover::after
+{
+    content: "Traduire";
+}
+
+.copy_french_text::after
+{
+    content: "Copier le français";
+}
+.copy_french_text:hover::after
+{
+    content: "Copy French";
+}
+
+.copy_english_text::after
+{
+    content: "Copy English";
+}
+.copy_english_text:hover::after
+{
+    content: "Copier l'anglais";
+}
